@@ -11,8 +11,6 @@ good
 bad
 .syncthing*
 
-retinaface-crop/insightface/*
-deepfakes_faceswap/faceswap-master/*
 datasets/error_detect.txt
 faceshifter/FaceShifter
 __pycache__

@@ -1,0 +1,397 @@
+07/02/2021 16:36:17 MainProcess     _run_0                         augmentation    initialize                     DEBUG    Initialized constants: {'clahe_base_contrast': 3, 'tgt_slices': slice(60, 324, None), 'warp_mapx': '[[[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]]', 'warp_mapy': '[[[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]]', 'warp_pad': 80, 'warp_slices': slice(8, -8, None), 'warp_lm_edge_anchors': '[[[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]]', 'warp_lm_grids': '[[[  0.   0.   0. ...   0.   0.   0.]\n  [  1.   1.   1. ...   1.   1.   1.]\n  [  2.   2.   2. ...   2.   2.   2.]\n  ...\n  [381. 381. 381. ... 381. 381. 381.]\n  [382. 382. 382. ... 382. 382. 382.]\n  [383. 383. 383. ... 383. 383. 383.]]\n\n [[  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  ...\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]]]'}
+07/02/2021 16:36:18 MainProcess     _run_0                         augmentation    initialize                     DEBUG    Initializing constants. training_size: 384
+07/02/2021 16:36:18 MainProcess     _run_0                         augmentation    initialize                     DEBUG    Initialized constants: {'clahe_base_contrast': 3, 'tgt_slices': slice(60, 324, None), 'warp_mapx': '[[[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]]', 'warp_mapy': '[[[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]]', 'warp_pad': 80, 'warp_slices': slice(8, -8, None), 'warp_lm_edge_anchors': '[[[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]]', 'warp_lm_grids': '[[[  0.   0.   0. ...   0.   0.   0.]\n  [  1.   1.   1. ...   1.   1.   1.]\n  [  2.   2.   2. ...   2.   2.   2.]\n  ...\n  [381. 381. 381. ... 381. 381. 381.]\n  [382. 382. 382. ... 382. 382. 382.]\n  [383. 383. 383. ... 383. 383. 383.]]\n\n [[  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  ...\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]]]'}
+07/02/2021 16:36:18 MainProcess     _run_0                         augmentation    initialize                     DEBUG    Initializing constants. training_size: 384
+07/02/2021 16:36:18 MainProcess     _run_0                         augmentation    initialize                     DEBUG    Initialized constants: {'clahe_base_contrast': 3, 'tgt_slices': slice(60, 324, None), 'warp_mapx': '[[[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]\n\n [[ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]\n  [ 60. 126. 192. 258. 324.]]]', 'warp_mapy': '[[[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]\n\n [[ 60.  60.  60.  60.  60.]\n  [126. 126. 126. 126. 126.]\n  [192. 192. 192. 192. 192.]\n  [258. 258. 258. 258. 258.]\n  [324. 324. 324. 324. 324.]]]', 'warp_pad': 80, 'warp_slices': slice(8, -8, None), 'warp_lm_edge_anchors': '[[[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]\n\n [[  0   0]\n  [  0 383]\n  [383 383]\n  [383   0]\n  [191   0]\n  [191 383]\n  [383 191]\n  [  0 191]]]', 'warp_lm_grids': '[[[  0.   0.   0. ...   0.   0.   0.]\n  [  1.   1.   1. ...   1.   1.   1.]\n  [  2.   2.   2. ...   2.   2.   2.]\n  ...\n  [381. 381. 381. ... 381. 381. 381.]\n  [382. 382. 382. ... 382. 382. 382.]\n  [383. 383. 383. ... 383. 383. 383.]]\n\n [[  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  ...\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]\n  [  0.   1.   2. ... 381. 382. 383.]]]'}
+07/02/2021 16:36:19 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['vekX_HwZtuM@00:15:15_extended_00032_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00031_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00005_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00104_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00047_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00177_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00123_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00093_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00092_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00083_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00168_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00088_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00048_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00142_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00233_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00160_000_0.png']
+07/02/2021 16:36:19 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['pt-wO73Y8to@00:09:15_extended_01274_000_1.png', 'pt-wO73Y8to@00:09:15_extended_01353_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01398_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01306_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01327_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01350_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01371_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01329_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01396_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01245_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01312_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01368_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01343_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01359_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01394_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01323_000_0.png']
+07/02/2021 16:36:20 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0355f28>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:21 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc03556a0>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0355668>, weight: 3.0, mask_channel: 4)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 4
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc047dbe0>, weight: 1.0, mask_channel: 1)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 1
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc047d5c0>, weight: 2.0, mask_channel: 5)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 5
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc047def0>, weight: 1.0, mask_channel: 2)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 2
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0477630>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0405390>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0405588>, weight: 3.0, mask_channel: 4)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 4
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0405cc0>, weight: 1.0, mask_channel: 1)
+07/02/2021 16:36:22 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 1
+07/02/2021 16:36:23 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0363748>, weight: 2.0, mask_channel: 5)
+07/02/2021 16:36:23 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 5
+07/02/2021 16:36:23 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0363f98>, weight: 1.0, mask_channel: 2)
+07/02/2021 16:36:23 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 2
+07/02/2021 16:36:25 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0355f28>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:25 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:25 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc03556a0>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:25 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:25 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0355668>, weight: 3.0, mask_channel: 4)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 4
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc047dbe0>, weight: 1.0, mask_channel: 1)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 1
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc047d5c0>, weight: 2.0, mask_channel: 5)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 5
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc047def0>, weight: 1.0, mask_channel: 2)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 2
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0477630>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0405390>, weight: 1.0, mask_channel: 3)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 3
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0405588>, weight: 3.0, mask_channel: 4)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 4
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0405cc0>, weight: 1.0, mask_channel: 1)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 1
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0363748>, weight: 2.0, mask_channel: 5)
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 5
+07/02/2021 16:36:26 MainProcess     _training_0                    api             converted_call                 DEBUG    Processing loss function: (func: <tensorflow.python.keras.engine.compile_utils.LossesContainer object at 0x7f1fc0363f98>, weight: 1.0, mask_channel: 2)
+07/02/2021 16:36:27 MainProcess     _training_0                    api             converted_call                 DEBUG    Applying mask from channel 2
+07/02/2021 16:36:36 MainProcess     _training_0                    train           _run_training_cycle            DEBUG    Save Iteration: (iteration: 1
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _save                          DEBUG    Backing up and saving models
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _get_save_averages             DEBUG    Getting save averages
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _get_save_averages             DEBUG    Average losses since last save: [0.49437597393989563, 0.4139854311943054]
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _should_backup                 DEBUG    Set initial save iteration loss average for 'a': 0.49437597393989563
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _should_backup                 DEBUG    Set initial save iteration loss average for 'b': 0.4139854311943054
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _should_backup                 DEBUG    Updated lowest historical save iteration averages from: {'a': 0.49437597393989563, 'b': 0.4139854311943054} to: {'a': 0.49437597393989563, 'b': 0.4139854311943054}
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _should_backup                 DEBUG    Should backup: True
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           save                           DEBUG    Saving State
+07/02/2021 16:36:36 MainProcess     _training_0                    serializer      save                           DEBUG    filename: /home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json, data type: <class 'dict'>
+07/02/2021 16:36:36 MainProcess     _training_0                    serializer      _check_extension               DEBUG    Original filename: '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json', final filename: '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json'
+07/02/2021 16:36:36 MainProcess     _training_0                    serializer      marshal                        DEBUG    data type: <class 'dict'>
+07/02/2021 16:36:36 MainProcess     _training_0                    serializer      marshal                        DEBUG    returned data type: <class 'bytes'>
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           save                           DEBUG    Saved State
+07/02/2021 16:36:36 MainProcess     _training_0                    _base           _save                          INFO     [Saved models] - Average loss since last save: face_a: 0.49438, face_b: 0.41399
+07/02/2021 16:36:42 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['vekX_HwZtuM@00:15:15_extended_00191_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00084_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00165_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00021_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00157_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00064_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00171_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00026_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00096_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00010_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00072_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00046_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00207_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00234_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00035_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00179_000_0.png']
+07/02/2021 16:36:42 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['pt-wO73Y8to@00:09:15_extended_01369_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01266_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01392_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01291_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01321_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01352_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01247_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01388_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01307_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01335_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01267_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01269_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01364_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01292_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01279_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01250_000_0.png']
+07/02/2021 16:36:53 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['vekX_HwZtuM@00:15:15_extended_00095_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00204_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00025_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00098_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00194_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00028_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00003_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00196_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00062_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00186_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00195_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00166_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00223_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00091_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00217_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00107_000_0.png']
+07/02/2021 16:36:53 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['pt-wO73Y8to@00:09:15_extended_01277_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01386_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01305_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01263_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01274_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01403_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01372_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01382_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01299_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01322_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01318_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01370_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01362_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01354_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01320_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01326_000_0.png']
+07/02/2021 16:37:06 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['vekX_HwZtuM@00:15:15_extended_00219_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00167_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00108_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00188_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00030_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00061_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00079_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00146_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00081_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00232_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00154_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00053_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00013_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00182_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00073_000_0.png', 'vekX_HwZtuM@00:15:15_extended_00070_000_0.png']
+07/02/2021 16:37:06 MainProcess     _run_1                         generator       cache_metadata                 DEBUG    All metadata already cached for: ['pt-wO73Y8to@00:09:15_extended_01313_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01270_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01348_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01251_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01310_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01339_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01272_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01365_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01257_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01271_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01347_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01298_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01262_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01331_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01399_000_0.png', 'pt-wO73Y8to@00:09:15_extended_01308_000_0.png']
+07/02/2021 16:37:08 MainProcess     MainThread                     train           _monitor                       DEBUG    Keyboard Interrupt received
+07/02/2021 16:37:08 MainProcess     MainThread                     train           _monitor                       DEBUG    Closed Monitor
+07/02/2021 16:37:08 MainProcess     MainThread                     train           _end_thread                    DEBUG    Ending Training thread
+07/02/2021 16:37:08 MainProcess     MainThread                     train           _end_thread                    INFO     Exit requested! The trainer will complete its current cycle, save the models and quit (This can take a couple of minutes depending on your training speed). If you want to kill it now, press Ctrl + c
+07/02/2021 16:37:08 MainProcess     MainThread                     multithreading  join                           DEBUG    Joining Threads: '_training'
+07/02/2021 16:37:08 MainProcess     MainThread                     multithreading  join                           DEBUG    Joining Thread: '_training_0'
+07/02/2021 16:37:12 MainProcess     _training_0                    train           _run_training_cycle            DEBUG    Stop received. Terminating
+07/02/2021 16:37:12 MainProcess     _training_0                    train           _run_training_cycle            DEBUG    Training cycle complete
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           _save                          DEBUG    Backing up and saving models
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           _get_save_averages             DEBUG    Getting save averages
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           _get_save_averages             DEBUG    Average losses since last save: [0.3269692311684291, 0.27850329875946045]
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           _should_backup                 DEBUG    Updated lowest historical save iteration averages from: {'a': 0.49437597393989563, 'b': 0.4139854311943054} to: {'a': 0.3269692311684291, 'b': 0.27850329875946045}
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           _should_backup                 DEBUG    Should backup: True
+07/02/2021 16:37:12 MainProcess     _training_0                    backup_restore  backup_model                   VERBOSE  Backing up: '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original.h5' to '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original.h5.bk'
+07/02/2021 16:37:12 MainProcess     _training_0                    backup_restore  backup_model                   VERBOSE  Backing up: '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json' to '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json.bk'
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           save                           DEBUG    Saving State
+07/02/2021 16:37:12 MainProcess     _training_0                    serializer      save                           DEBUG    filename: /home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json, data type: <class 'dict'>
+07/02/2021 16:37:12 MainProcess     _training_0                    serializer      _check_extension               DEBUG    Original filename: '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json', final filename: '/home/valentin/PFE/video-conference-dataset_test/data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models/original_state.json'
+07/02/2021 16:37:12 MainProcess     _training_0                    serializer      marshal                        DEBUG    data type: <class 'dict'>
+07/02/2021 16:37:12 MainProcess     _training_0                    serializer      marshal                        DEBUG    returned data type: <class 'bytes'>
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           save                           DEBUG    Saved State
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           _save                          INFO     [Saved models] - Average loss since last save: face_a: 0.32697, face_b: 0.27850
+07/02/2021 16:37:12 MainProcess     _training_0                    _base           clear_tensorboard              DEBUG    Ending Tensorboard Session: <tensorflow.python.keras.callbacks.TensorBoard object at 0x7f1fc0257550>
+07/02/2021 16:37:12 MainProcess     MainThread                     multithreading  join                           DEBUG    Joined all Threads: '_training'
+Traceback (most recent call last):
+  File "/home/valentin/PFE/video-conference-dataset/deepfakes_faceswap/faceswap-master/lib/cli/launcher.py", line 182, in execute_script
+    process.process()
+  File "/home/valentin/PFE/video-conference-dataset/deepfakes_faceswap/faceswap-master/scripts/train.py", line 187, in process
+    self._end_thread(thread, err)
+  File "/home/valentin/PFE/video-conference-dataset/deepfakes_faceswap/faceswap-master/scripts/train.py", line 228, in _end_thread
+    sys.stdout.flush()
+BrokenPipeError: [Errno 32] Broken pipe
+
+============ System Information ============
+encoding:            UTF-8
+git_branch:          Not Found
+git_commits:         Not Found
+gpu_cuda:            10.0
+gpu_cudnn:           7.6.2
+gpu_devices:         
+gpu_devices_active:  
+gpu_driver:          No Nvidia driver found
+gpu_vram:            
+os_machine:          x86_64
+os_platform:         Linux-5.12.13-zen1-2-zen-x86_64-with-debian-stretch-sid
+os_release:          5.12.13-zen1-2-zen
+py_command:          /home/valentin/PFE/video-conference-dataset/deepfakes_faceswap/faceswap-master/faceswap.py train -A data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/vekX_HwZtuM@00:15:15_000_faces -B data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/pt-wO73Y8to@00:09:15_000_faces -m data/out/vekX_HwZtuM@00:15:15_000⟶pt-wO73Y8to@00:09:15_000/models -it 200000 -s 20000
+py_conda_version:    conda 4.7.10
+py_implementation:   CPython
+py_version:          3.7.3
+py_virtual_env:      False
+sys_cores:           16
+sys_processor:       x86_64
+sys_ram:             Total: 31387MB, Available: 19947MB, Used: 10419MB, Free: 6513MB
+
+=============== Pip Packages ===============
+absl-py==0.13.0
+asn1crypto==0.24.0
+astor==0.8.0
+astunparse==1.6.3
+cachetools==4.2.2
+certifi==2019.6.16
+cffi==1.12.3
+chardet==3.0.4
+conda==4.7.10
+conda-package-handling==1.3.11
+cryptography==2.7
+cycler==0.10.0
+decorator==4.4.0
+fastcluster==1.1.26
+ffmpy==0.2.3
+flatbuffers==1.12
+gast==0.3.3
+google-auth==1.32.1
+google-auth-oauthlib==0.4.4
+google-pasta==0.2.0
+grpcio==1.32.0
+h5py==2.10.0
+idna==2.8
+imageio==2.9.0
+imageio-ffmpeg==0.4.4
+joblib==1.0.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.2
+kiwisolver==1.1.0
+libarchive-c==2.8
+Markdown==3.1.1
+matplotlib==3.1.1
+mkl-fft==1.0.12
+mkl-random==1.0.2
+networkx==2.3
+numpy==1.19.5
+nvidia-ml-py3==7.352.1
+oauthlib==3.1.1
+olefile==0.46
+opencv-python==4.5.1.48
+opt-einsum==3.3.0
+pathlib==1.0.1
+Pillow==8.3.0
+protobuf==3.17.3
+psutil==5.8.0
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycosat==0.6.3
+pycparser==2.19
+pyOpenSSL==19.0.0
+pyparsing==2.4.2
+PySocks==1.7.0
+python-dateutil==2.8.0
+PyWavelets==1.0.3
+requests==2.22.0
+requests-oauthlib==1.3.0
+rsa==4.7.2
+ruamel-yaml==0.15.46
+scikit-image==0.15.0
+scikit-learn==0.24.2
+scipy==1.3.0
+six==1.15.0
+tensorboard==2.5.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
+tensorboardX==1.8
+tensorflow==2.4.2
+tensorflow-estimator==2.4.0
+tensorflow-gpu==1.14.0
+termcolor==1.1.0
+threadpoolctl==2.1.0
+torch==1.1.0
+torchvision==0.3.0
+tqdm==4.61.1
+typing-extensions==3.7.4.3
+urllib3==1.24.2
+Werkzeug==0.15.5
+wrapt==1.12.1
+
+============== Conda Packages ==============
+Could not get package list
+
+================= Configs ==================
+--------- train.ini ---------
+
+[global]
+centering:                face
+coverage:                 68.75
+icnr_init:                False
+conv_aware_init:          False
+optimizer:                adam
+learning_rate:            5e-05
+epsilon_exponent:         -7
+reflect_padding:          False
+allow_growth:             False
+mixed_precision:          False
+nan_protection:           True
+convert_batchsize:        16
+
+[global.loss]
+loss_function:            ssim
+mask_loss_function:       mse
+l2_reg_term:              100
+eye_multiplier:           3
+mouth_multiplier:         2
+penalized_mask_loss:      True
+mask_type:                extended
+mask_blur_kernel:         3
+mask_threshold:           4
+learn_mask:               False
+
+[trainer.original]
+preview_images:           14
+zoom_amount:              5
+rotation_range:           10
+shift_range:              5
+flip_chance:              50
+color_lightness:          30
+color_ab:                 8
+color_clahe_chance:       50
+color_clahe_max_size:     4
+
+[model.realface]
+input_size:               64
+output_size:              128
+dense_nodes:              1536
+complexity_encoder:       128
+complexity_decoder:       512
+
+[model.dlight]
+features:                 best
+details:                  good
+output_size:              256
+
+[model.villain]
+lowmem:                   False
+
+[model.dfl_sae]
+input_size:               128
+clipnorm:                 True
+architecture:             df
+autoencoder_dims:         0
+encoder_dims:             42
+decoder_dims:             21
+multiscale_decoder:       False
+
+[model.unbalanced]
+input_size:               128
+lowmem:                   False
+clipnorm:                 True
+nodes:                    1024
+complexity_encoder:       128
+complexity_decoder_a:     384
+complexity_decoder_b:     512
+
+[model.original]
+lowmem:                   False
+
+[model.dfaker]
+output_size:              128
+
+[model.dfl_h128]
+lowmem:                   False
+
+--------- extract.ini ---------
+
+[global]
+allow_growth:             False
+
+[detect.s3fd]
+confidence:               70
+batch-size:               4
+
+[detect.mtcnn]
+minsize:                  20
+scalefactor:              0.709
+batch-size:               8
+threshold_1:              0.6
+threshold_2:              0.7
+threshold_3:              0.7
+
+[detect.cv2_dnn]
+confidence:               50
+
+[mask.vgg_clear]
+batch-size:               6
+
+[mask.vgg_obstructed]
+batch-size:               2
+
+[mask.unet_dfl]
+batch-size:               8
+
+[align.fan]
+batch-size:               12
+
+--------- .faceswap ---------
+backend:                  nvidia
+
+--------- convert.ini ---------
+
+[color.color_transfer]
+clip:                     True
+preserve_paper:           True
+
+[color.match_hist]
+threshold:                99.0
+
+[color.manual_balance]
+colorspace:               HSV
+balance_1:                0.0
+balance_2:                0.0
+balance_3:                0.0
+contrast:                 0.0
+brightness:               0.0
+
+[scaling.sharpen]
+method:                   none
+amount:                   150
+radius:                   0.3
+threshold:                5.0
+
+[writer.opencv]
+format:                   png
+draw_transparent:         False
+jpg_quality:              75
+png_compress_level:       3
+
+[writer.gif]
+fps:                      25
+loop:                     0
+palettesize:              256
+subrectangles:            False
+
+[writer.pillow]
+format:                   png
+draw_transparent:         False
+optimize:                 False
+gif_interlace:            True
+jpg_quality:              75
+png_compress_level:       3
+tif_compression:          tiff_deflate
+
+[writer.ffmpeg]
+container:                mp4
+codec:                    libx264
+crf:                      23
+preset:                   medium
+tune:                     none
+profile:                  auto
+level:                    auto
+skip_mux:                 False
+
+[mask.box_blend]
+type:                     gaussian
+distance:                 11.0
+radius:                   5.0
+passes:                   1
+
+[mask.mask_blend]
+type:                     normalized
+kernel_size:              3
+passes:                   4
+threshold:                4
+erosion:                  0.0

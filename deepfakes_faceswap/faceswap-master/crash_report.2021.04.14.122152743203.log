@@ -1,0 +1,882 @@
+04/14/2021 12:21:51 MainProcess     MainThread                     logger          log_setup                      INFO     Log level set to: INFO
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    Initializing GPUStats
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    OS is not macOS. Trying pynvml
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    GPU Device count: 1
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    Active GPU Devices: [0]
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    GPU Handles found: 1
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    GPU Driver: 460.32.03
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    GPU Devices: ['GeForce RTX 2080 Ti']
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    GPU VRAM: [11019.4375]
+04/14/2021 12:21:51 MainProcess     MainThread                     gpu_stats       _log                           DEBUG    Initialized GPUStats
+04/14/2021 12:21:51 MainProcess     MainThread                     launcher        _configure_backend             DEBUG    Executing: train. PID: 6586
+04/14/2021 12:21:52 MainProcess     MainThread                     tpu_cluster_resolver <module>                       DEBUG    Falling back to TensorFlow client; we recommended you install the Cloud TPU client directly with pip install cloud-tpu-client.
+04/14/2021 12:21:52 MainProcess     MainThread                     launcher        _test_for_tf_version           DEBUG    Installed Tensorflow Version: 2.4
+04/14/2021 12:21:52 MainProcess     MainThread                     queue_manager   __init__                       DEBUG    Initializing QueueManager
+04/14/2021 12:21:52 MainProcess     MainThread                     queue_manager   __init__                       DEBUG    Initialized QueueManager
+04/14/2021 12:21:52 MainProcess     MainThread                     train           __init__                       DEBUG    Initializing Train: (args: Namespace(batch_size=16, colab=False, configfile=None, distributed=False, exclude_gpus=None, freeze_weights=False, func=<bound method ScriptExecutor.execute_script of <lib.cli.launcher.ScriptExecutor object at 0x7f91a42b01f0>>, input_a='/home/vletalle/pfe_db/video-conference-dataset/data/out/nicolas_faces', input_b='/home/vletalle/pfe_db/video-conference-dataset/data/out/wassim_faces', iterations=200000, load_weights=None, logfile=None, loglevel='INFO', model_dir='/home/vletalle/pfe_db/video-conference-dataset/data/out/models/nicolas_wassim', no_augment_color=False, no_flip=False, no_logs=False, no_warp=False, preview=False, preview_scale=100, redirect_gui=False, save_interval=1000, snapshot_interval=25000, summary=False, timelapse_input_a=None, timelapse_input_b=None, timelapse_output=None, trainer='original', warp_to_landmarks=False, write_image=False)
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _get_images                    DEBUG    Getting image paths
+04/14/2021 12:21:52 MainProcess     MainThread                     utils           get_image_paths                DEBUG    Scanned Folder contains 215 files
+04/14/2021 12:21:52 MainProcess     MainThread                     utils           get_image_paths                DEBUG    Returning 215 images
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _get_images                    DEBUG    Test file: (filename: /home/vletalle/pfe_db/video-conference-dataset/data/out/nicolas_faces/zoom_001_100_19_0.png, metadata: {'width': 512, 'height': 512, 'itxt': {'alignments': {'x': 25, 'w': 116, 'y': 22, 'h': 169, 'landmarks_xy': [[15.632217407226562, 91.92913818359375], [20.19952392578125, 110.1983642578125], [22.483177185058594, 128.46759033203125], [24.766830444335938, 142.16952514648438], [31.61779022216797, 155.87144470214844], [40.752403259277344, 162.72239685058594], [49.88702392578125, 169.5733642578125], [61.30529022216797, 174.1406707763672], [79.57452392578125, 178.70797729492188], [100.12739562988281, 178.70797729492188], [111.54566955566406, 176.42431640625], [120.68028259277344, 171.8570098876953], [129.8148956298828, 160.43875122070312], [136.66586303710938, 146.73683166503906], [138.94952392578125, 135.3185577392578], [143.51683044433594, 119.33297729492188], [145.80047607421875, 103.34739685058594], [31.61779022216797, 73.659912109375], [38.46875, 69.09260559082031], [47.603370666503906, 66.80894470214844], [56.73798370361328, 69.09260559082031], [65.87260437011719, 71.37625122070312], [97.84375, 73.659912109375], [106.97836303710938, 71.37625122070312], [116.11297607421875, 71.37625122070312], [125.24758911132812, 73.659912109375], [134.3822021484375, 80.5108642578125], [81.85816955566406, 91.92913818359375], [81.85816955566406, 103.34739685058594], [79.57452392578125, 112.48202514648438], [79.57452392578125, 121.61663818359375], [70.43991088867188, 128.46759033203125], [75.00721740722656, 130.75125122070312], [79.57452392578125, 133.03489685058594], [86.42547607421875, 130.75125122070312], [90.99278259277344, 130.75125122070312], [43.03605651855469, 89.64547729492188], [49.88702392578125, 87.36183166503906], [56.73798370361328, 87.36183166503906], [63.58894348144531, 91.92913818359375], [56.73798370361328, 91.92913818359375], [49.88702392578125, 91.92913818359375], [97.84375, 94.21278381347656], [106.97836303710938, 89.64547729492188], [113.82933044433594, 91.92913818359375], [120.68028259277344, 94.21278381347656], [113.82933044433594, 96.49644470214844], [104.69471740722656, 96.49644470214844], [61.30529022216797, 151.30413818359375], [68.15625, 149.02047729492188], [75.00721740722656, 146.73683166503906], [79.57452392578125, 146.73683166503906], [84.14183044433594, 146.73683166503906], [93.27644348144531, 149.02047729492188], [100.12739562988281, 153.58778381347656], [93.27644348144531, 153.58778381347656], [86.42547607421875, 155.87144470214844], [79.57452392578125, 155.87144470214844], [75.00721740722656, 155.87144470214844], [68.15625, 153.58778381347656], [63.58894348144531, 151.30413818359375], [75.00721740722656, 151.30413818359375], [79.57452392578125, 151.30413818359375], [86.42547607421875, 151.30413818359375], [100.12739562988281, 151.30413818359375], [86.42547607421875, 149.02047729492188], [79.57452392578125, 149.02047729492188], [75.00721740722656, 149.02047729492188]], 'mask': {'components': {'mask': b'x\x9c\xed\x9a\x01\x8e\xc20\x0c\x04\xfb\xb3<\xcdO\xcb\xd3z \xe0\n\x12 \xbc\x9eb\x89\xee|`\x9cM\xd36q\x96\xc5\x18c\x8c1\xc6\x18c\x8c1\xc6\x18c\xcc\x81\x191\xd7\x8dx\xc6\x8e\xf2{\xf7\'\xcc\x18\xa0>\x92\xf6k\rT\t\xd9\xc1o\x15\x10\xf6\xa1\xda\x99\x08*\xfa\x13\xe5\x02f\xcd_\x9d\x83\xaa\xfe\xb4T{\xf5\xebZ\xd0\x0f@_\x08\x00\xd1\xeb\x01@z9\x80\t\xf9\xc5\x000\xbd\xb6\x069\xbd\xf4\x16\x1a\xa0^\t\x80\xd4+\x01L\xd4\x9f\x0f P\x7f>\x00\xd8\x9f\x0f\x80\xf5\xe7\x03\x80\xfd\xe9\x97`\xfc\x96?\xabg_@\xca7\xe0\xe8\xfe\xf8%\xbf\xf2\x0frt\xff\x04\xfd\xca>(@\xbf\xa0o\xf7\x83\x0f\x80\xf6\x0b\xde\xed\x0f\xcc\xafm\xc39\xbf\xa4\x07?\x81\x9a\x1f{\x00\xd4\x1d`\xb7? \xbf\xa8o\xf7C\x13\xa0\x9fA1~\xfd\x04f6\xfb\x03\xf1\xcbzh\x02\n\xfe\x00\xf4\xa5\x13H\xc0_\xd1\x03\x01\x14\xfb"\xbd\xc3\xaf\x07Pn\x0b\xf5\x0e\xbf\x1a\x00\xd0\x15\x9b\xad\xc3_J\xffALS0\xdd\xff\xbb\x81t\xc0\xce\x88\x05Pzq\x0e\xc8&\xa8\x10\x01\xdc\x11\xceF\x80M\xfe?\xb9\x08p}n!\xa0\x93\xbf\xf1p\x0f\xe05{\xde\x06\x88N\xfb\x85xS\xc3\xdc\xdd~a<)"\xd0\x8b\x0f\x1fp\xbd\xfb\xf1e\xab1\xc6\x18cJ\xfc\x01s\x19i\x7f', 'affine_matrix': [[0.6149737531982353, 0.01988212848561203, 11.452233516271924], [-0.019882128485612036, 0.6149737531982352, 3.6542488837421843]], 'interpolator': 3, 'stored_size': 128}, 'extended': {'mask': b'x\x9c\xed\x9a\xd1m\xc30\x0c\x05\xbd\x19G\xe3h\x1c-M\xd1"\xc9\x87[X\x8fg\x13H\xde-p\x14\x9f\xec8\xa2\xb6\xcd\x18c\x8c1\xc6\x18c\x8c1\xc6\x98y\xf2\x85\xeb\xdd\xb7\x03\x9cUa\x1d\x91\xefT\x03\xe9\x0f\xad}\x97"\xf4!\xeb\xef\x05D\xdf\xdf\xd0\xdfi\x17P=\x7f\xb7\x80h\xea\xbb\x9b\xa0\xbb\xfcf\x01\xd1\xd7\xb7"(\xc2\xaf\xbf\x08\x82\xd07\x02(\xc4\x7f\x9b]\xbe\x1e@\xcd\xfa\x03\xd2\xab\x01\x14\xe6\x97\x9e\xc0\xc0\xf4Z\x00\xc5\xf9\x95\x00\x02\xd4+\xfe"\xfd\xeb\x01\x04\xa9\x17^\x81\x85\xfa\xd7\x03`\xf5\xebO`\xb1\xfe\xe5\r\x90\xac\x7f9\x80i?\xbd\x01\x96\x03\x98\xf6\xe7{\xf9W\xf5\xf0\x0bP\xf8\x05\xf8t\x7f\xbe\x93_\xf9\x02\xfat\x7f\x81~\xe5\x0b8A\xbf\xa0\x1f\xf7\x83\x1b@\xfb\x076\xedO\xcc\xaf\x1d\x81p~I?\xfe\x07\x18\xdb\x00\xea\x01\xc4\xb4?!\xbf\xa8\x1f\xf7C\x01\xe8\x07p\x8c_?\x80\xaca\x7f"~Y\x0f\x05\xd0\xf0\'\xa0o\r\xa2\x00\x7fG\x0f4\xa09\x87\x9b]~\xbf\x01\xed1\xe4\xec\xf2\xbb\r\x00\xa6\xb05\xba\xfc\xad\xf5\x1d\xc4\x0c\xa1Cm\x012\x81\xfeF,\x80\xd2\x8b\x19\x00\xe3\xef\'\xeb-\x80\xefi\xac\xb6\x00\x0b\xff\xc1Z\x0bp\xfd\xda\x83\x80\x86\xff$\x8f\x95p\xe2\x1d\x9d\xc8I\xfb\x0f\xff\xdd\x08\xaa\x8b\xee\'\xc5N\x11\x99\'\xc5\xfe\x17\xbf\xf7\x9d.\xb6\x1ac\x8c1\xa6\xc5\x17\xd3\x0cZg', 'affine_matrix': [[0.6149737531982353, 0.01988212848561203, 11.452233516271924], [-0.019882128485612036, 0.6149737531982352, 3.6542488837421843]], 'interpolator': 3, 'stored_size': 128}}}, 'source': {'alignments_version': 2.1, 'original_filename': 'zoom_001_100_19_0.png', 'face_index': 0, 'source_filename': 'zoom_001_100_19.jpg', 'source_is_video': False}}})
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _get_images                    INFO     Model A Directory: '/home/vletalle/pfe_db/video-conference-dataset/data/out/nicolas_faces' (215 images)
+04/14/2021 12:21:52 MainProcess     MainThread                     utils           get_image_paths                DEBUG    Scanned Folder contains 589 files
+04/14/2021 12:21:52 MainProcess     MainThread                     utils           get_image_paths                DEBUG    Returning 589 images
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _get_images                    DEBUG    Test file: (filename: /home/vletalle/pfe_db/video-conference-dataset/data/out/wassim_faces/zoom_000_100_0_0.png, metadata: {'width': 512, 'height': 512, 'itxt': {'alignments': {'x': 17, 'w': 122, 'y': 22, 'h': 180, 'landmarks_xy': [[9.033653259277344, 89.19007110595703], [11.453521728515625, 108.54903411865234], [13.873397827148438, 123.06827545166016], [18.71314239501953, 140.00738525390625], [25.972755432128906, 156.94647216796875], [38.072113037109375, 171.4656982421875], [55.01121520996094, 183.5650634765625], [71.9503173828125, 190.82467651367188], [91.30929565429688, 195.6644287109375], [105.82852172851562, 190.82467651367188], [110.66827392578125, 183.5650634765625], [115.50801086425781, 176.30545043945312], [122.76762390136719, 164.20608520507812], [127.60737609863281, 144.84710693359375], [132.44711303710938, 130.327880859375], [134.8669891357422, 115.80866241455078], [132.44711303710938, 96.4496841430664], [45.33173370361328, 74.67082977294922], [57.43109130859375, 69.83109283447266], [69.53044128417969, 69.83109283447266], [79.20993041992188, 69.83109283447266], [86.46955871582031, 72.25096893310547], [115.50801086425781, 74.67082977294922], [122.76762390136719, 72.25096893310547], [130.02723693847656, 72.25096893310547], [134.8669891357422, 74.67082977294922], [134.8669891357422, 79.51058197021484], [103.40866088867188, 94.0298080444336], [105.82852172851562, 106.1291732788086], [108.24839782714844, 120.64839935302734], [108.24839782714844, 130.327880859375], [88.88941955566406, 135.16763305664062], [93.72917175292969, 135.16763305664062], [100.98878479003906, 137.58749389648438], [105.82852172851562, 137.58749389648438], [108.24839782714844, 135.16763305664062], [57.43109130859375, 89.19007110595703], [67.11058044433594, 86.77019500732422], [74.37019348144531, 86.77019500732422], [79.20993041992188, 89.19007110595703], [74.37019348144531, 91.60993194580078], [64.69070434570312, 91.60993194580078], [110.66827392578125, 91.60993194580078], [117.92788696289062, 89.19007110595703], [125.1875, 89.19007110595703], [127.60737609863281, 91.60993194580078], [122.76762390136719, 94.0298080444336], [115.50801086425781, 94.0298080444336], [71.9503173828125, 156.94647216796875], [84.0496826171875, 152.10671997070312], [96.14903259277344, 149.68685913085938], [100.98878479003906, 149.68685913085938], [105.82852172851562, 149.68685913085938], [110.66827392578125, 152.10671997070312], [113.088134765625, 156.94647216796875], [108.24839782714844, 161.78622436523438], [105.82852172851562, 166.6259765625], [98.56890869140625, 166.6259765625], [91.30929565429688, 166.6259765625], [84.0496826171875, 164.20608520507812], [74.37019348144531, 156.94647216796875], [91.30929565429688, 156.94647216796875], [98.56890869140625, 156.94647216796875], [103.40866088867188, 156.94647216796875], [110.66827392578125, 156.94647216796875], [103.40866088867188, 159.3663330078125], [98.56890869140625, 159.3663330078125], [91.30929565429688, 159.3663330078125]], 'mask': {'components': {'mask': b"x\x9c\xed\x9a\x8b\r\x830\x0cD\xb3YF\xf3h\x19\xad-\x90\xaa\xa2\x82\xca\xf1]\x12Q\xee-\xf0\xce\xc6\x08\xf2II\x08!\x84\x10B\x08!\x84\x10B\x08!\xc4\xcd\xb1#F\xc9\xb3=<\xd4T\x99l\xb7\xe2\xb2\x7f(\xc4\x04\xce\xd2\xbf`\xd9\x9bK\xafP\x1a\x10+}\x850\x99\xd1\xd29\xfex\xe9\x04\x7fFJ\x87\xfd`\xe9\x98\x1f/\x1d\xf1\x1bE\x1e\xf6\xb3\xecW\xf5\x9b\xfc\xb7\xf6\xf3\x06P\xfeK\xfaM\xfe\xa9~\xda\x00\xc8\x1f\xc3H\xfe\xe8\xff?\xcb\x1f\xd4O\xf7\x93\x06\xa0L\xf6\xc7\x7f\xff\xed/\xfc\xc0\xf2\x97\xe2\x8f\xebS!\xe8\xe3\xe37y\xf5\xb7@\xf0C\xbb\x1f\x04?\xa2'<\x00\xe4\xf1\xbfV\xe0\xb0\x1f\xdc|\x81\xfd\x98\x1e\x7f\x00\xa0\x1fm\xc0\xb5\xf7\xbe\xf0\x06\xc0z\xac\x01\xd8\xdb\xb7\x81\xf8\x19\x87\x02H\x03([\xcf\x80\x9f\xa1\x07\x1a@:\x93)\x93\xfd9\xea\xe7\xe8\xe3\x01X\xfe`\x00\xe2\x91\\\x99Z~,\x00\xf7D\xb2=\x00U\xdf>\x02\xec\x93\xcf\xc6\x00\x8cO\xcf\x17ef\xf9\x0b\r-\xe8P~j9\x91\xea\xa2O\xee\x8fQ\x8f\xeeo\xb8Z\xd0\xa7\xfb\x15G\x80\x9ezG\x0b\xba\xdf\xc5\xf8\x9d\xa0k\xf7\xdf\t\xec\xdc\xdfo\xf8v\x9c%\x18v\x13\xe68\xc18\xfd\x1aa\x9f\x81~\xdf\xc6C\xae!\xca\xd8\xd2\xf7\x8c\xbb\x00%\x84\x10d\x9e\xfc\xb1\xb8W", 'affine_matrix': [[0.5863353942133305, 0.0051343146826316795, 9.268860892275448], [-0.005134314682631681, 0.5863353942133306, 3.817201524205771]], 'interpolator': 3, 'stored_size': 128}, 'extended': {'mask': b"x\x9c\xed\x9a\x01\x0e\xc2 \x10\x04\xf9\x19O\xbb\xa7\xf1\xb4\xaa\xd1Fk\xd4\xd0\xdd\xbd^\xd4\x9d\x0f\xccr\\!\x14Z3\xc6\x18c\x8c1\xc6\x18c\x8c1\xc6\x9c\x893u\xf6\xbe<\x10w\x0e\xd2\x8fe\x8e\x9cX1i\x7f\x0c\xa2\xb3\xf7\xd9\xc1oQ\xe9\x81\xc1\x0b\xfd\x1d\xb4\x8b\xfc\x03\xd6+\xfc\x81\xdb\x05~\xb0\xefT~j\xf0\xb4\xbf\x93v\xceO\x96\xfe\x02\xb3\x00\x05mg\xfc\x82\xc13~\x89\x1d\xf6w\x8d\x1d\xf4kJ\x8f\xfbe\xf6/\xf5\x87\xce\xdf\x8b\xfd\x88\xfe\xef\xfd\xc2\x06\xb4\xff\x1b\xfd\xf1+~p\xfb\xab\xf6\xcb\x1a\xc0~\x8c\x10\xf9\xa1\xedO\xe8\x07\xf5\xe5~Q\x03\x8cb?~\xfa\x88\x9f\xf0\xa3\xed\xdfD\x13\x80\xeb%\xe7/\xbc\xfd\xaa\x0f\xbfM2\x01\xc4\xf4K\xfc\x8c^0\x01\xcc\xf4+\x8e\xe0\xe4\xcf_\xda\xcf\xe9\xf9\t \xfdl\x01\xe8\x7f\xefd\x01\xf8\x7f\xff\x9c\x9f\xd6s\x05\xe0\xbe\xbe+\x8c_q\xf5\xc2\x14\x80Z|W\x08\xbfBO\x14@t\xf35\x8a\xfd\x1d\xf5k\xf4x\x00\x95\x1f\x0c \xbc\xf8\x1c\xa5\xc3\xc7\x02ho\x9e\xf7\x07\x90\xea\xf7\xb7\x80d\xed\xc3\x03(\xb6\x9e'F\xe5\xf0/\xec(A\xc2\xf0\xdb\x9eK\xa1\x14}\x9b\xde\x8c2\xaa\x7fe\xaa\x049\xd5\xbf1\x11 S?Q\x82\xf4\xa7@\x9f\x13\xa4V\x7fM\x10\xef\xfdy\xcd\xb7\xe1]\x82\xe3\x9e\x86\xbdLp\xec\xcb\xb4\xd8f\x88\x83j\xbf\xa1\xdfB\x8c\xc2Gy\xad\xf2E\xa01\xc6P\x9c\x00\xcd\xf6\x17\x1c", 'affine_matrix': [[0.5863353942133305, 0.0051343146826316795, 9.268860892275448], [-0.005134314682631681, 0.5863353942133306, 3.817201524205771]], 'interpolator': 3, 'stored_size': 128}}}, 'source': {'alignments_version': 2.1, 'original_filename': 'zoom_000_100_0_0.png', 'face_index': 0, 'source_filename': 'zoom_000_100_0.jpg', 'source_is_video': False}}})
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _get_images                    INFO     Model B Directory: '/home/vletalle/pfe_db/video-conference-dataset/data/out/wassim_faces' (589 images)
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _get_images                    DEBUG    Got image paths: [('a', '215 images'), ('b', '589 images')]
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _validate_image_counts         WARNING  At least one of your input folders contains fewer than 250 images. Results are likely to be poor.
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _validate_image_counts         WARNING  You need to provide a significant number of images to successfully train a Neural Network. Aim for between 500 - 5000 images per side.
+04/14/2021 12:21:52 MainProcess     MainThread                     train           __init__                       DEBUG    Initialized Train
+04/14/2021 12:21:52 MainProcess     MainThread                     train           process                        DEBUG    Starting Training Process
+04/14/2021 12:21:52 MainProcess     MainThread                     train           process                        INFO     Training data directory: /home/vletalle/pfe_db/video-conference-dataset/data/out/models/nicolas_wassim
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _start_thread                  DEBUG    Launching Trainer thread
+04/14/2021 12:21:52 MainProcess     MainThread                     multithreading  __init__                       DEBUG    Initializing MultiThread: (target: '_training', thread_count: 1)
+04/14/2021 12:21:52 MainProcess     MainThread                     multithreading  __init__                       DEBUG    Initialized MultiThread: '_training'
+04/14/2021 12:21:52 MainProcess     MainThread                     multithreading  start                          DEBUG    Starting thread(s): '_training'
+04/14/2021 12:21:52 MainProcess     MainThread                     multithreading  start                          DEBUG    Starting thread 1 of 1: '_training_0'
+04/14/2021 12:21:52 MainProcess     MainThread                     multithreading  start                          DEBUG    Started all threads '_training': 1
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _start_thread                  DEBUG    Launched Trainer thread
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _monitor                       DEBUG    Launching Monitor
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _monitor                       INFO     ===================================================
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _monitor                       INFO       Starting
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _monitor                       INFO       Press 'ENTER' to save and quit
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _monitor                       INFO       Press 'S' to save model weights immediately
+04/14/2021 12:21:52 MainProcess     MainThread                     train           _monitor                       INFO     ===================================================
+Traceback (most recent call last):
+  File "/home/vletalle/pfe_db/video-conference-dataset/deepfakes_faceswap/faceswap-master/lib/cli/launcher.py", line 182, in execute_script
+    process.process()
+  File "/home/vletalle/pfe_db/video-conference-dataset/deepfakes_faceswap/faceswap-master/scripts/train.py", line 186, in process
+    err = self._monitor(thread)
+  File "/home/vletalle/pfe_db/video-conference-dataset/deepfakes_faceswap/faceswap-master/scripts/train.py", line 366, in _monitor
+    keypress = KBHit(is_gui=self._args.redirect_gui)
+  File "/home/vletalle/pfe_db/video-conference-dataset/deepfakes_faceswap/faceswap-master/lib/keypress.py", line 42, in __init__
+    self.new_term = termios.tcgetattr(self.file_desc)
+termios.error: (25, 'Inappropriate ioctl for device')
+
+============ System Information ============
+encoding:            UTF-8
+git_branch:          Sur la branche dev
+git_commits:         5c9b553 nicolas_wassim. d8ac9e1 gen cmd. fd50171 manually sorted images. 4469159 rm retina-df-sf. 378e202 add submods
+gpu_cuda:            10.1
+gpu_cudnn:           7.6.5
+gpu_devices:         GPU_0: GeForce RTX 2080 Ti
+gpu_devices_active:  GPU_0
+gpu_driver:          460.32.03
+gpu_vram:            GPU_0: 11019MB
+os_machine:          x86_64
+os_platform:         Linux-5.4.0-70-generic-x86_64-with-glibc2.10
+os_release:          5.4.0-70-generic
+py_command:          /home/vletalle/pfe_db/video-conference-dataset/deepfakes_faceswap/faceswap-master/faceswap.py train -A data/out/nicolas_faces -B data/out/wassim_faces -m data/out/models/nicolas_wassim -it 200000 -s 1000
+py_conda_version:    conda 4.9.2
+py_implementation:   CPython
+py_version:          3.8.5
+py_virtual_env:      False
+sys_cores:           12
+sys_processor:       x86_64
+sys_ram:             Total: 64001MB, Available: 62353MB, Used: 954MB, Free: 33559MB
+
+=============== Pip Packages ===============
+absl-py==0.12.0
+alabaster==0.7.12
+anaconda-client==1.7.2
+anaconda-navigator==1.10.0
+anaconda-project==0.8.3
+argh==0.26.2
+argon2-cffi @ file:///tmp/build/80754af9/argon2-cffi_1596828493937/work
+asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
+astroid @ file:///tmp/build/80754af9/astroid_1592495912941/work
+astropy==4.0.2
+astunparse==1.6.3
+async-generator==1.10
+atomicwrites==1.4.0
+attrs @ file:///tmp/build/80754af9/attrs_1604765588209/work
+autopep8 @ file:///tmp/build/80754af9/autopep8_1596578164842/work
+Babel @ file:///tmp/build/80754af9/babel_1605108370292/work
+backcall==0.2.0
+backports.functools-lru-cache==1.6.1
+backports.shutil-get-terminal-size==1.0.0
+backports.tempfile==1.0
+backports.weakref==1.0.post1
+beautifulsoup4 @ file:///tmp/build/80754af9/beautifulsoup4_1601924105527/work
+bitarray @ file:///tmp/build/80754af9/bitarray_1605065113847/work
+bkcharts==0.2
+bleach @ file:///tmp/build/80754af9/bleach_1600439572647/work
+bokeh @ file:///tmp/build/80754af9/bokeh_1603297833684/work
+boto==2.49.0
+Bottleneck==1.3.2
+brotlipy==0.7.0
+cachetools==4.2.1
+certifi==2020.6.20
+cffi @ file:///tmp/build/80754af9/cffi_1600699146221/work
+chardet==3.0.4
+click==7.1.2
+cloudpickle @ file:///tmp/build/80754af9/cloudpickle_1598884132938/work
+clyent==1.2.2
+colorama @ file:///tmp/build/80754af9/colorama_1603211150991/work
+conda==4.9.2
+conda-build==3.20.5
+conda-package-handling @ file:///tmp/build/80754af9/conda-package-handling_1603018141399/work
+conda-verify==3.4.2
+contextlib2==0.6.0.post1
+cryptography @ file:///tmp/build/80754af9/cryptography_1601046815590/work
+cycler==0.10.0
+Cython @ file:///tmp/build/80754af9/cython_1594831566883/work
+cytoolz==0.11.0
+dask @ file:///tmp/build/80754af9/dask-core_1602083700509/work
+decorator==4.4.2
+defusedxml==0.6.0
+diff-match-patch @ file:///tmp/build/80754af9/diff-match-patch_1594828741838/work
+distributed @ file:///tmp/build/80754af9/distributed_1605066520644/work
+docutils==0.16
+entrypoints==0.3
+et-xmlfile==1.0.1
+fastcache==1.1.0
+fastcluster==1.1.26
+ffmpy==0.2.3
+filelock==3.0.12
+flake8 @ file:///tmp/build/80754af9/flake8_1601911421857/work
+Flask==1.1.2
+flatbuffers==1.12
+fsspec @ file:///tmp/build/80754af9/fsspec_1602684995936/work
+future==0.18.2
+gast==0.3.3
+gevent @ file:///tmp/build/80754af9/gevent_1601397537062/work
+glob2==0.7
+gmpy2==2.0.8
+google-auth==1.28.0
+google-auth-oauthlib==0.4.4
+google-pasta==0.2.0
+greenlet @ file:///tmp/build/80754af9/greenlet_1600874013538/work
+grpcio==1.32.0
+h5py==2.10.0
+HeapDict==1.0.1
+html5lib @ file:///tmp/build/80754af9/html5lib_1593446221756/work
+idna @ file:///tmp/build/80754af9/idna_1593446292537/work
+imageio @ file:///tmp/build/80754af9/imageio_1594161405741/work
+imageio-ffmpeg==0.4.3
+imagesize==1.2.0
+importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1602276842396/work
+iniconfig @ file:///tmp/build/80754af9/iniconfig_1602780191262/work
+intervaltree @ file:///tmp/build/80754af9/intervaltree_1598376443606/work
+ipykernel @ file:///tmp/build/80754af9/ipykernel_1596207638929/work/dist/ipykernel-5.3.4-py3-none-any.whl
+ipython @ file:///tmp/build/80754af9/ipython_1604101197014/work
+ipython-genutils==0.2.0
+ipywidgets @ file:///tmp/build/80754af9/ipywidgets_1601490159889/work
+isort @ file:///tmp/build/80754af9/isort_1602603989581/work
+itsdangerous==1.1.0
+jdcal==1.4.1
+jedi @ file:///tmp/build/80754af9/jedi_1592841866100/work
+jeepney @ file:///tmp/build/80754af9/jeepney_1605069705079/work
+Jinja2==2.11.2
+joblib @ file:///tmp/build/80754af9/joblib_1601912903842/work
+json5==0.9.5
+jsonschema @ file:///tmp/build/80754af9/jsonschema_1602607155483/work
+jupyter==1.0.0
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1601311786391/work
+jupyter-console @ file:///tmp/build/80754af9/jupyter_console_1598884538475/work
+jupyter-core==4.6.3
+jupyterlab==2.2.6
+jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_1601490720602/work
+jupyterlab-server @ file:///tmp/build/80754af9/jupyterlab_server_1594164409481/work
+Keras-Preprocessing==1.1.2
+keyring @ file:///tmp/build/80754af9/keyring_1601490835422/work
+kiwisolver @ file:///tmp/build/80754af9/kiwisolver_1604014535162/work
+lazy-object-proxy==1.4.3
+libarchive-c==2.9
+llvmlite==0.34.0
+locket==0.2.0
+lxml @ file:///tmp/build/80754af9/lxml_1603216285000/work
+Markdown==3.3.4
+MarkupSafe==1.1.1
+matplotlib==3.2.2
+mccabe==0.6.1
+mistune==0.8.4
+mkl-fft==1.2.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+mock==4.0.2
+more-itertools @ file:///tmp/build/80754af9/more-itertools_1605111547926/work
+mpmath==1.1.0
+msgpack==1.0.0
+multipledispatch==0.6.0
+navigator-updater==0.2.1
+nbclient @ file:///tmp/build/80754af9/nbclient_1602783176460/work
+nbconvert @ file:///tmp/build/80754af9/nbconvert_1601914830498/work
+nbformat @ file:///tmp/build/80754af9/nbformat_1602783287752/work
+nest-asyncio @ file:///tmp/build/80754af9/nest-asyncio_1605115881283/work
+networkx @ file:///tmp/build/80754af9/networkx_1598376031484/work
+nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
+nose==1.3.7
+notebook @ file:///tmp/build/80754af9/notebook_1601501575118/work
+numba @ file:///tmp/build/80754af9/numba_1600100669015/work
+numexpr==2.7.1
+numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1603570489231/work
+numpydoc @ file:///tmp/build/80754af9/numpydoc_1605117425582/work
+nvidia-ml-py3 @ git+https://github.com/deepfakes/nvidia-ml-py3.git@6fc29ac84b32bad877f078cb4a777c1548a00bf6
+oauthlib==3.1.0
+olefile==0.46
+opencv-python==4.5.1.48
+openpyxl @ file:///tmp/build/80754af9/openpyxl_1598113097404/work
+opt-einsum==3.3.0
+packaging==20.4
+pandas @ file:///tmp/build/80754af9/pandas_1602088120436/work
+pandocfilters @ file:///tmp/build/80754af9/pandocfilters_1605120460739/work
+parso==0.7.0
+partd==1.1.0
+path @ file:///tmp/build/80754af9/path_1598376507494/work
+pathlib==1.0.1
+pathlib2==2.3.5
+pathtools==0.1.2
+patsy==0.5.1
+pep8==1.7.1
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow @ file:///tmp/build/80754af9/pillow_1603822255246/work
+pkginfo==1.6.1
+pluggy==0.13.1
+ply==3.11
+prometheus-client==0.8.0
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1602688806899/work
+protobuf==3.15.7
+psutil @ file:///tmp/build/80754af9/psutil_1598370257551/work
+ptyprocess==0.6.0
+py @ file:///tmp/build/80754af9/py_1593446248552/work
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycodestyle==2.6.0
+pycosat==0.6.3
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+pycurl==7.43.0.6
+pydocstyle @ file:///tmp/build/80754af9/pydocstyle_1598885001695/work
+pyflakes==2.2.0
+Pygments @ file:///tmp/build/80754af9/pygments_1604103097372/work
+pylint @ file:///tmp/build/80754af9/pylint_1598623985952/work
+pyodbc===4.0.0-unsupported
+pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1594392929924/work
+pyparsing==2.4.7
+pyrsistent @ file:///tmp/build/80754af9/pyrsistent_1600141720057/work
+PySocks==1.7.1
+pytest==0.0.0
+python-dateutil==2.8.1
+python-jsonrpc-server @ file:///tmp/build/80754af9/python-jsonrpc-server_1600278539111/work
+python-language-server @ file:///tmp/build/80754af9/python-language-server_1600454544709/work
+pytz==2020.1
+PyWavelets @ file:///tmp/build/80754af9/pywavelets_1601658317819/work
+pyxdg @ file:///tmp/build/80754af9/pyxdg_1603822279816/work
+PyYAML==5.3.1
+pyzmq==19.0.2
+QDarkStyle==2.8.1
+QtAwesome @ file:///tmp/build/80754af9/qtawesome_1602272867890/work
+qtconsole @ file:///tmp/build/80754af9/qtconsole_1600870028330/work
+QtPy==1.9.0
+regex @ file:///tmp/build/80754af9/regex_1602786672676/work
+requests @ file:///tmp/build/80754af9/requests_1592841827918/work
+requests-oauthlib==1.3.0
+rope @ file:///tmp/build/80754af9/rope_1602264064449/work
+rsa==4.7.2
+Rtree==0.9.4
+ruamel-yaml==0.15.87
+scandir==1.7
+scikit-image==0.17.2
+scikit-learn @ file:///tmp/build/80754af9/scikit-learn_1598376899566/work
+scipy @ file:///tmp/build/80754af9/scipy_1597686649129/work
+seaborn @ file:///tmp/build/80754af9/seaborn_1600553570093/work
+SecretStorage==3.1.2
+Send2Trash==1.5.0
+simplegeneric==0.8.1
+singledispatch @ file:///tmp/build/80754af9/singledispatch_1602523705405/work
+sip==4.19.13
+six @ file:///tmp/build/80754af9/six_1605205327372/work
+snowballstemmer==2.0.0
+sortedcollections==1.2.1
+sortedcontainers==2.2.2
+soupsieve==2.0.1
+Sphinx @ file:///tmp/build/80754af9/sphinx_1597428793432/work
+sphinxcontrib-applehelp==1.0.2
+sphinxcontrib-devhelp==1.0.2
+sphinxcontrib-htmlhelp==1.0.3
+sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-qthelp==1.0.3
+sphinxcontrib-serializinghtml==1.1.4
+sphinxcontrib-websupport @ file:///tmp/build/80754af9/sphinxcontrib-websupport_1597081412696/work
+spyder @ file:///tmp/build/80754af9/spyder_1599056981321/work
+spyder-kernels @ file:///tmp/build/80754af9/spyder-kernels_1599056754858/work
+SQLAlchemy @ file:///tmp/build/80754af9/sqlalchemy_1603397987316/work
+statsmodels @ file:///tmp/build/80754af9/statsmodels_1602280205159/work
+sympy @ file:///tmp/build/80754af9/sympy_1605119542615/work
+tables==3.6.1
+tblib @ file:///tmp/build/80754af9/tblib_1597928476713/work
+tensorboard==2.4.1
+tensorboard-plugin-wit==1.8.0
+tensorflow-estimator==2.4.0
+tensorflow-gpu==2.4.1
+termcolor==1.1.0
+terminado==0.9.1
+testpath==0.4.4
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+tifffile==2020.10.1
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+toolz @ file:///tmp/build/80754af9/toolz_1601054250827/work
+tornado==6.0.4
+tqdm @ file:///tmp/build/80754af9/tqdm_1602185206534/work
+traitlets @ file:///tmp/build/80754af9/traitlets_1602787416690/work
+typing-extensions @ file:///tmp/build/80754af9/typing_extensions_1598376058250/work
+ujson @ file:///tmp/build/80754af9/ujson_1602523317881/work
+unicodecsv==0.14.1
+urllib3 @ file:///tmp/build/80754af9/urllib3_1603305693037/work
+watchdog @ file:///tmp/build/80754af9/watchdog_1593447344699/work
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+webencodings==0.5.1
+Werkzeug==1.0.1
+widgetsnbextension==3.5.1
+wrapt==1.12.1
+wurlitzer @ file:///tmp/build/80754af9/wurlitzer_1594753850195/work
+xlrd==1.2.0
+XlsxWriter @ file:///tmp/build/80754af9/xlsxwriter_1602692860603/work
+xlwt==1.3.0
+xmltodict==0.12.0
+yapf @ file:///tmp/build/80754af9/yapf_1593528177422/work
+zict==2.0.0
+zipp @ file:///tmp/build/80754af9/zipp_1604001098328/work
+zope.event==4.5.0
+zope.interface @ file:///tmp/build/80754af9/zope.interface_1602002420968/work
+
+============== Conda Packages ==============
+# packages in environment at /home/vletalle/anaconda3:
+#
+# Name                    Version                   Build  Channel
+_ipyw_jlab_nb_ext_conf    0.1.0                    py38_0  
+_libgcc_mutex             0.1                        main  
+absl-py                   0.12.0                   pypi_0    pypi
+alabaster                 0.7.12                     py_0  
+anaconda                  2020.11                  py38_0  
+anaconda-client           1.7.2                    py38_0  
+anaconda-navigator        1.10.0                   py38_0  
+anaconda-project          0.8.4                      py_0  
+argh                      0.26.2                   py38_0  
+argon2-cffi               20.1.0           py38h7b6447c_1  
+asn1crypto                1.4.0                      py_0  
+astroid                   2.4.2                    py38_0  
+astropy                   4.0.2            py38h7b6447c_0  
+astunparse                1.6.3                    pypi_0    pypi
+async_generator           1.10                       py_0  
+atomicwrites              1.4.0                      py_0  
+attrs                     20.3.0             pyhd3eb1b0_0  
+autopep8                  1.5.4                      py_0  
+babel                     2.8.1              pyhd3eb1b0_0  
+backcall                  0.2.0                      py_0  
+backports                 1.0                        py_2  
+backports.functools_lru_cache 1.6.1                      py_0  
+backports.shutil_get_terminal_size 1.0.0                    py38_2  
+backports.tempfile        1.0                        py_1  
+backports.weakref         1.0.post1                  py_1  
+beautifulsoup4            4.9.3              pyhb0f4dca_0  
+bitarray                  1.6.1            py38h27cfd23_0  
+bkcharts                  0.2                      py38_0  
+blas                      1.0                         mkl  
+bleach                    3.2.1                      py_0  
+blosc                     1.20.1               hd408876_0  
+bokeh                     2.2.3                    py38_0  
+boto                      2.49.0                   py38_0  
+bottleneck                1.3.2            py38heb32a55_1  
+brotlipy                  0.7.0           py38h7b6447c_1000  
+bzip2                     1.0.8                h7b6447c_0  
+ca-certificates           2020.10.14                    0  
+cachetools                4.2.1                    pypi_0    pypi
+cairo                     1.14.12              h8948797_3  
+certifi                   2020.6.20          pyhd3eb1b0_3  
+cffi                      1.14.3           py38he30daa8_0  
+chardet                   3.0.4                 py38_1003  
+click                     7.1.2                      py_0  
+cloudpickle               1.6.0                      py_0  
+clyent                    1.2.2                    py38_1  
+colorama                  0.4.4                      py_0  
+conda                     4.9.2            py38h06a4308_0  
+conda-build               3.20.5                   py38_1  
+conda-env                 2.6.0                         1  
+conda-package-handling    1.7.2            py38h03888b9_0  
+conda-verify              3.4.2                      py_1  
+contextlib2               0.6.0.post1                py_0  
+cryptography              3.1.1            py38h1ba5d50_0  
+curl                      7.71.1               hbc83047_1  
+cycler                    0.10.0                   py38_0  
+cython                    0.29.21          py38he6710b0_0  
+cytoolz                   0.11.0           py38h7b6447c_0  
+dask                      2.30.0                     py_0  
+dask-core                 2.30.0                     py_0  
+dbus                      1.13.18              hb2f20db_0  
+decorator                 4.4.2                      py_0  
+defusedxml                0.6.0                      py_0  
+diff-match-patch          20200713                   py_0  
+distributed               2.30.1           py38h06a4308_0  
+docutils                  0.16                     py38_1  
+entrypoints               0.3                      py38_0  
+et_xmlfile                1.0.1                   py_1001  
+expat                     2.2.10               he6710b0_2  
+fastcache                 1.1.0            py38h7b6447c_0  
+fastcluster               1.1.26                   pypi_0    pypi
+ffmpy                     0.2.3                    pypi_0    pypi
+filelock                  3.0.12                     py_0  
+flake8                    3.8.4                      py_0  
+flask                     1.1.2                      py_0  
+flatbuffers               1.12                     pypi_0    pypi
+fontconfig                2.13.0               h9420a91_0  
+freetype                  2.10.4               h5ab3b9f_0  
+fribidi                   1.0.10               h7b6447c_0  
+fsspec                    0.8.3                      py_0  
+future                    0.18.2                   py38_1  
+gast                      0.3.3                    pypi_0    pypi
+get_terminal_size         1.0.0                haa9412d_0  
+gevent                    20.9.0           py38h7b6447c_0  
+glib                      2.66.1               h92f7085_0  
+glob2                     0.7                        py_0  
+gmp                       6.1.2                h6c8ec71_1  
+gmpy2                     2.0.8            py38hd5f6e3b_3  
+google-auth               1.28.0                   pypi_0    pypi
+google-auth-oauthlib      0.4.4                    pypi_0    pypi
+google-pasta              0.2.0                    pypi_0    pypi
+graphite2                 1.3.14               h23475e2_0  
+greenlet                  0.4.17           py38h7b6447c_0  
+grpcio                    1.32.0                   pypi_0    pypi
+gst-plugins-base          1.14.0               hbbd80ab_1  
+gstreamer                 1.14.0               hb31296c_0  
+h5py                      2.10.0           py38h7918eee_0  
+harfbuzz                  2.4.0                hca77d97_1  
+hdf5                      1.10.4               hb1b8bf9_0  
+heapdict                  1.0.1                      py_0  
+html5lib                  1.1                        py_0  
+icu                       58.2                 he6710b0_3  
+idna                      2.10                       py_0  
+imageio                   2.9.0                      py_0  
+imageio-ffmpeg            0.4.3                    pypi_0    pypi
+imagesize                 1.2.0                      py_0  
+importlib-metadata        2.0.0                      py_1  
+importlib_metadata        2.0.0                         1  
+iniconfig                 1.1.1                      py_0  
+intel-openmp              2020.2                      254  
+intervaltree              3.1.0                      py_0  
+ipykernel                 5.3.4            py38h5ca1d4c_0  
+ipython                   7.19.0           py38hb070fc8_0  
+ipython_genutils          0.2.0                    py38_0  
+ipywidgets                7.5.1                      py_1  
+isort                     5.6.4                      py_0  
+itsdangerous              1.1.0                      py_0  
+jbig                      2.1                  hdba287a_0  
+jdcal                     1.4.1                      py_0  
+jedi                      0.17.1                   py38_0  
+jeepney                   0.5.0              pyhd3eb1b0_0  
+jinja2                    2.11.2                     py_0  
+joblib                    0.17.0                     py_0  
+jpeg                      9b                   h024ee3a_2  
+json5                     0.9.5                      py_0  
+jsonschema                3.2.0                      py_2  
+jupyter                   1.0.0                    py38_7  
+jupyter_client            6.1.7                      py_0  
+jupyter_console           6.2.0                      py_0  
+jupyter_core              4.6.3                    py38_0  
+jupyterlab                2.2.6                      py_0  
+jupyterlab_pygments       0.1.2                      py_0  
+jupyterlab_server         1.2.0                      py_0  
+keras-preprocessing       1.1.2                    pypi_0    pypi
+keyring                   21.4.0                   py38_1  
+kiwisolver                1.3.0            py38h2531618_0  
+krb5                      1.18.2               h173b8e3_0  
+lazy-object-proxy         1.4.3            py38h7b6447c_0  
+lcms2                     2.11                 h396b838_0  
+ld_impl_linux-64          2.33.1               h53a641e_7  
+libarchive                3.4.2                h62408e4_0  
+libcurl                   7.71.1               h20c2e04_1  
+libedit                   3.1.20191231         h14c3975_1  
+libffi                    3.3                  he6710b0_2  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran-ng            7.3.0                hdf63c60_0  
+liblief                   0.10.1               he6710b0_0  
+libllvm10                 10.0.1               hbcb73fb_5  
+libpng                    1.6.37               hbc83047_0  
+libsodium                 1.0.18               h7b6447c_0  
+libspatialindex           1.9.3                he6710b0_0  
+libssh2                   1.9.0                h1ba5d50_1  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libtiff                   4.1.0                h2733197_1  
+libtool                   2.4.6             h7b6447c_1005  
+libuuid                   1.0.3                h1bed415_2  
+libxcb                    1.14                 h7b6447c_0  
+libxml2                   2.9.10               hb55368b_3  
+libxslt                   1.1.34               hc22bd24_0  
+llvmlite                  0.34.0           py38h269e1b5_4  
+locket                    0.2.0                    py38_1  
+lxml                      4.6.1            py38hefd8a0e_0  
+lz4-c                     1.9.2                heb0550a_3  
+lzo                       2.10                 h7b6447c_2  
+markdown                  3.3.4                    pypi_0    pypi
+markupsafe                1.1.1            py38h7b6447c_0  
+matplotlib                3.2.2                    pypi_0    pypi
+mccabe                    0.6.1                    py38_1  
+mistune                   0.8.4           py38h7b6447c_1000  
+mkl                       2020.2                      256  
+mkl-service               2.3.0            py38he904b0f_0  
+mkl_fft                   1.2.0            py38h23d657b_0  
+mkl_random                1.1.1            py38h0573a6f_0  
+mock                      4.0.2                      py_0  
+more-itertools            8.6.0              pyhd3eb1b0_0  
+mpc                       1.1.0                h10f8cd9_1  
+mpfr                      4.0.2                hb69a4c5_1  
+mpmath                    1.1.0                    py38_0  
+msgpack-python            1.0.0            py38hfd86e86_1  
+multipledispatch          0.6.0                    py38_0  
+navigator-updater         0.2.1                    py38_0  
+nbclient                  0.5.1                      py_0  
+nbconvert                 6.0.7                    py38_0  
+nbformat                  5.0.8                      py_0  
+ncurses                   6.2                  he6710b0_1  
+nest-asyncio              1.4.2              pyhd3eb1b0_0  
+networkx                  2.5                        py_0  
+nltk                      3.5                        py_0  
+nose                      1.3.7                    py38_2  
+notebook                  6.1.4                    py38_0  
+numba                     0.51.2           py38h0573a6f_1  
+numexpr                   2.7.1            py38h423224d_0  
+numpy                     1.19.2           py38h54aff64_0  
+numpy-base                1.19.2           py38hfa32c7d_0  
+numpydoc                  1.1.0              pyhd3eb1b0_1  
+nvidia-ml-py3             7.352.1                  pypi_0    pypi
+oauthlib                  3.1.0                    pypi_0    pypi
+olefile                   0.46                       py_0  
+opencv-python             4.5.1.48                 pypi_0    pypi
+openpyxl                  3.0.5                      py_0  
+openssl                   1.1.1h               h7b6447c_0  
+opt-einsum                3.3.0                    pypi_0    pypi
+packaging                 20.4                       py_0  
+pandas                    1.1.3            py38he6710b0_0  
+pandoc                    2.11                 hb0f4dca_0  
+pandocfilters             1.4.3            py38h06a4308_1  
+pango                     1.45.3               hd140c19_0  
+parso                     0.7.0                      py_0  
+partd                     1.1.0                      py_0  
+patchelf                  0.12                 he6710b0_0  
+path                      15.0.0                   py38_0  
+path.py                   12.5.0                        0  
+pathlib                   1.0.1                    pypi_0    pypi
+pathlib2                  2.3.5                    py38_0  
+pathtools                 0.1.2                      py_1  
+patsy                     0.5.1                    py38_0  
+pcre                      8.44                 he6710b0_0  
+pep8                      1.7.1                    py38_0  
+pexpect                   4.8.0                    py38_0  
+pickleshare               0.7.5                 py38_1000  
+pillow                    8.0.1            py38he98fc37_0  
+pip                       20.2.4           py38h06a4308_0  
+pixman                    0.40.0               h7b6447c_0  
+pkginfo                   1.6.1            py38h06a4308_0  
+pluggy                    0.13.1                   py38_0  
+ply                       3.11                     py38_0  
+prometheus_client         0.8.0                      py_0  
+prompt-toolkit            3.0.8                      py_0  
+prompt_toolkit            3.0.8                         0  
+protobuf                  3.15.7                   pypi_0    pypi
+psutil                    5.7.2            py38h7b6447c_0  
+ptyprocess                0.6.0                    py38_0  
+py                        1.9.0                      py_0  
+py-lief                   0.10.1           py38h403a769_0  
+pyasn1                    0.4.8                    pypi_0    pypi
+pyasn1-modules            0.2.8                    pypi_0    pypi
+pycodestyle               2.6.0                      py_0  
+pycosat                   0.6.3            py38h7b6447c_1  
+pycparser                 2.20                       py_2  
+pycurl                    7.43.0.6         py38h1ba5d50_0  
+pydocstyle                5.1.1                      py_0  
+pyflakes                  2.2.0                      py_0  
+pygments                  2.7.2              pyhd3eb1b0_0  
+pylint                    2.6.0                    py38_0  
+pyodbc                    4.0.30           py38he6710b0_0  
+pyopenssl                 19.1.0                     py_1  
+pyparsing                 2.4.7                      py_0  
+pyqt                      5.9.2            py38h05f1152_4  
+pyrsistent                0.17.3           py38h7b6447c_0  
+pysocks                   1.7.1                    py38_0  
+pytables                  3.6.1            py38h9fd0a39_0  
+pytest                    6.1.1                    py38_0  
+python                    3.8.5                h7579374_1  
+python-dateutil           2.8.1                      py_0  
+python-jsonrpc-server     0.4.0                      py_0  
+python-language-server    0.35.1                     py_0  
+python-libarchive-c       2.9                        py_0  
+pytz                      2020.1                     py_0  
+pywavelets                1.1.1            py38h7b6447c_2  
+pyxdg                     0.27               pyhd3eb1b0_0  
+pyyaml                    5.3.1            py38h7b6447c_1  
+pyzmq                     19.0.2           py38he6710b0_1  
+qdarkstyle                2.8.1                      py_0  
+qt                        5.9.7                h5867ecd_1  
+qtawesome                 1.0.1                      py_0  
+qtconsole                 4.7.7                      py_0  
+qtpy                      1.9.0                      py_0  
+readline                  8.0                  h7b6447c_0  
+regex                     2020.10.15       py38h7b6447c_0  
+requests                  2.24.0                     py_0  
+requests-oauthlib         1.3.0                    pypi_0    pypi
+ripgrep                   12.1.1                        0  
+rope                      0.18.0                     py_0  
+rsa                       4.7.2                    pypi_0    pypi
+rtree                     0.9.4                    py38_1  
+ruamel_yaml               0.15.87          py38h7b6447c_1  
+scandir                   1.7                      pypi_0    pypi
+scikit-image              0.17.2           py38hdf5156a_0  
+scikit-learn              0.23.2           py38h0573a6f_0  
+scipy                     1.5.2            py38h0b6359f_0  
+seaborn                   0.11.0                     py_0  
+secretstorage             3.1.2                    py38_0  
+send2trash                1.5.0                    py38_0  
+setuptools                50.3.1           py38h06a4308_1  
+simplegeneric             0.8.1                    py38_2  
+singledispatch            3.4.0.3                 py_1001  
+sip                       4.19.13          py38he6710b0_0  
+six                       1.15.0           py38h06a4308_0  
+snowballstemmer           2.0.0                      py_0  
+sortedcollections         1.2.1                      py_0  
+sortedcontainers          2.2.2                      py_0  
+soupsieve                 2.0.1                      py_0  
+sphinx                    3.2.1                      py_0  
+sphinxcontrib             1.0                      py38_1  
+sphinxcontrib-applehelp   1.0.2                      py_0  
+sphinxcontrib-devhelp     1.0.2                      py_0  
+sphinxcontrib-htmlhelp    1.0.3                      py_0  
+sphinxcontrib-jsmath      1.0.1                      py_0  
+sphinxcontrib-qthelp      1.0.3                      py_0  
+sphinxcontrib-serializinghtml 1.1.4                      py_0  
+sphinxcontrib-websupport  1.2.4                      py_0  
+spyder                    4.1.5                    py38_0  
+spyder-kernels            1.9.4                    py38_0  
+sqlalchemy                1.3.20           py38h7b6447c_0  
+sqlite                    3.33.0               h62c20be_0  
+statsmodels               0.12.0           py38h7b6447c_0  
+sympy                     1.6.2            py38h06a4308_1  
+tbb                       2020.3               hfd86e86_0  
+tblib                     1.7.0                      py_0  
+tensorboard               2.4.1                    pypi_0    pypi
+tensorboard-plugin-wit    1.8.0                    pypi_0    pypi
+tensorflow-estimator      2.4.0                    pypi_0    pypi
+tensorflow-gpu            2.4.1                    pypi_0    pypi
+termcolor                 1.1.0                    pypi_0    pypi
+terminado                 0.9.1                    py38_0  
+testpath                  0.4.4                      py_0  
+threadpoolctl             2.1.0              pyh5ca1d4c_0  
+tifffile                  2020.10.1        py38hdd07704_2  
+tk                        8.6.10               hbc83047_0  
+toml                      0.10.1                     py_0  
+toolz                     0.11.1                     py_0  
+tornado                   6.0.4            py38h7b6447c_1  
+tqdm                      4.50.2                     py_0  
+traitlets                 5.0.5                      py_0  
+typing_extensions         3.7.4.3                    py_0  
+ujson                     4.0.1            py38he6710b0_0  
+unicodecsv                0.14.1                   py38_0  
+unixodbc                  2.3.9                h7b6447c_0  
+urllib3                   1.25.11                    py_0  
+watchdog                  0.10.3                   py38_0  
+wcwidth                   0.2.5                      py_0  
+webencodings              0.5.1                    py38_1  
+werkzeug                  1.0.1                      py_0  
+wheel                     0.35.1                     py_0  
+widgetsnbextension        3.5.1                    py38_0  
+wrapt                     1.12.1                   pypi_0    pypi
+wurlitzer                 2.0.1                    py38_0  
+xlrd                      1.2.0                      py_0  
+xlsxwriter                1.3.7                      py_0  
+xlwt                      1.3.0                    py38_0  
+xmltodict                 0.12.0                     py_0  
+xz                        5.2.5                h7b6447c_0  
+yaml                      0.2.5                h7b6447c_0  
+yapf                      0.30.0                     py_0  
+zeromq                    4.3.3                he6710b0_3  
+zict                      2.0.0                      py_0  
+zipp                      3.4.0              pyhd3eb1b0_0  
+zlib                      1.2.11               h7b6447c_3  
+zope                      1.0                      py38_1  
+zope.event                4.5.0                    py38_0  
+zope.interface            5.1.2            py38h7b6447c_0  
+zstd                      1.4.5                h9ceee32_0  
+
+================= Configs ==================
+--------- .faceswap ---------
+backend:                  nvidia
+
+--------- extract.ini ---------
+
+[global]
+allow_growth:             False
+
+[detect.s3fd]
+confidence:               70
+batch-size:               4
+
+[detect.mtcnn]
+minsize:                  20
+scalefactor:              0.709
+batch-size:               8
+threshold_1:              0.6
+threshold_2:              0.7
+threshold_3:              0.7
+
+[detect.cv2_dnn]
+confidence:               50
+
+[mask.vgg_clear]
+batch-size:               6
+
+[mask.vgg_obstructed]
+batch-size:               2
+
+[mask.unet_dfl]
+batch-size:               8
+
+[align.fan]
+batch-size:               12
+
+--------- train.ini ---------
+
+[global]
+centering:                face
+coverage:                 68.75
+icnr_init:                False
+conv_aware_init:          False
+optimizer:                adam
+learning_rate:            5e-05
+epsilon_exponent:         -7
+reflect_padding:          False
+allow_growth:             False
+mixed_precision:          False
+nan_protection:           True
+convert_batchsize:        16
+
+[global.loss]
+loss_function:            ssim
+mask_loss_function:       mse
+l2_reg_term:              100
+eye_multiplier:           3
+mouth_multiplier:         2
+penalized_mask_loss:      True
+mask_type:                extended
+mask_blur_kernel:         3
+mask_threshold:           4
+learn_mask:               False
+
+[trainer.original]
+preview_images:           14
+zoom_amount:              5
+rotation_range:           10
+shift_range:              5
+flip_chance:              50
+color_lightness:          30
+color_ab:                 8
+color_clahe_chance:       50
+color_clahe_max_size:     4
+
+[model.realface]
+input_size:               64
+output_size:              128
+dense_nodes:              1536
+complexity_encoder:       128
+complexity_decoder:       512
+
+[model.dlight]
+features:                 best
+details:                  good
+output_size:              256
+
+[model.villain]
+lowmem:                   False
+
+[model.dfl_sae]
+input_size:               128
+clipnorm:                 True
+architecture:             df
+autoencoder_dims:         0
+encoder_dims:             42
+decoder_dims:             21
+multiscale_decoder:       False
+
+[model.unbalanced]
+input_size:               128
+lowmem:                   False
+clipnorm:                 True
+nodes:                    1024
+complexity_encoder:       128
+complexity_decoder_a:     384
+complexity_decoder_b:     512
+
+[model.original]
+lowmem:                   False
+
+[model.dfaker]
+output_size:              128
+
+[model.dfl_h128]
+lowmem:                   False
+
+--------- convert.ini ---------
+
+[color.color_transfer]
+clip:                     True
+preserve_paper:           True
+
+[color.match_hist]
+threshold:                99.0
+
+[color.manual_balance]
+colorspace:               HSV
+balance_1:                0.0
+balance_2:                0.0
+balance_3:                0.0
+contrast:                 0.0
+brightness:               0.0
+
+[scaling.sharpen]
+method:                   none
+amount:                   150
+radius:                   0.3
+threshold:                5.0
+
+[writer.opencv]
+format:                   png
+draw_transparent:         False
+jpg_quality:              75
+png_compress_level:       3
+
+[writer.gif]
+fps:                      25
+loop:                     0
+palettesize:              256
+subrectangles:            False
+
+[writer.pillow]
+format:                   png
+draw_transparent:         False
+optimize:                 False
+gif_interlace:            True
+jpg_quality:              75
+png_compress_level:       3
+tif_compression:          tiff_deflate
+
+[writer.ffmpeg]
+container:                mp4
+codec:                    libx264
+crf:                      23
+preset:                   medium
+tune:                     none
+profile:                  auto
+level:                    auto
+skip_mux:                 False
+
+[mask.box_blend]
+type:                     gaussian
+distance:                 11.0
+radius:                   5.0
+passes:                   1
+
+[mask.mask_blend]
+type:                     normalized
+kernel_size:              3
+passes:                   4
+threshold:                4
+erosion:                  0.0
