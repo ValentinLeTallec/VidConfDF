@@ -1,0 +1,50 @@
+Bootstrap: library
+
+From: stouzani/default/cuda10_cudnn7_conda:latest
+
+
+%post
+
+    # install python3.7
+    apt-get update
+    # apt-get install software-properties-common -y
+    # add-apt-repository ppa:deadsnakes/ppa -y
+    # apt-get update
+    # apt-get install python3.7 -y 
+    # apt-get install python3.7-distutils -y
+    # apt-get install python3.7-tk -y
+    # apt-get install curl -y
+    # curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    # python3.7 get-pip.py
+    # rm get-pip.py
+
+    # install requirements
+    apt-get install ffmpeg git -y
+    python3.7 -m pip install "tqdm>=4.42"
+    python3.7 -m pip install "psutil>=5.7.0"
+    python3.7 -m pip install "pathlib==1.0.1"
+    python3.7 -m pip install "numpy>=1.18.0,<1.20.0"
+    python3.7 -m pip install "opencv-python>=4.1.2.0"
+    python3.7 -m pip install "pillow>=7.0.0"
+    python3.7 -m pip install "scikit-learn>=0.22.0"
+    python3.7 -m pip install "fastcluster==1.1.26"
+    python3.7 -m pip install "matplotlib>=3.0.3,<3.3.0"
+    python3.7 -m pip install "imageio>=2.8.0"
+    python3.7 -m pip install "imageio-ffmpeg>=0.4.2"
+    python3.7 -m pip install "ffmpy==0.2.3"
+    python3.7 -m pip install "git+https://github.com/deepfakes/nvidia-ml-py3.git" # Revert back to nvidia-ml-py3 when windows/system32 patch is implemented
+    python3.7 -m pip install "tensorflow>=2.2.0,<2.5.0"
+
+    # python3.7 -m pip install jupyter matplotlib
+    # python3.7 -m pip install jupyter_http_over_ws
+    # jupyter serverextension enable --py jupyter_http_over_ws
+
+    alias python=python3.7
+    echo "alias python=python3.7" >> /root/.bashrc
+
+
+%environment
+    # Nothing
+
+%runscript
+    # python3.7 deepfakes.py -m generate_models -i data/src/ -o data/out/ --gpu 0 --python_path /usr/local/miniconda/bin/python3.7

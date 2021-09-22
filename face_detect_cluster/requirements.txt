@@ -1,0 +1,8 @@
+tqdm
+opencv-python
+mxnet-cu101
+cython
+easydict
+face_recognition
+sklearn
+numba

@@ -1,0 +1,3 @@
+sklearn
+face_recognition
+tqdm

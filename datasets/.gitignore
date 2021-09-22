@@ -1,0 +1,8 @@
+*.jpg
+*.png
+*.mp4
+*.fsa
+*.pkl
+*.sync-conflict-*
+good
+bad
