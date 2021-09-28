@@ -1,5 +1,7 @@
 # DeepFakes Manipulation
 
+> Disclamer : this folder is based on the work of [ondyari/FaceForensics](https://github.com/ondyari/FaceForensics/tree/534fe11c4de65663b4134edca0a228442bfa63a7)
+
 We use the [faceswap implementation from the deepfakes github](https://github.com/deepfakes/faceswap) for our generated DeepFakes videos. We made some changes to their implementation to make it fully automatic for our extracted videos. If you are interested in their current status, please head to the corresponding github.
 We provide the source code that was used for our experiments as well as the scripts to produce new videos as well as to recreate our manipulated videos using our provided models.
 
