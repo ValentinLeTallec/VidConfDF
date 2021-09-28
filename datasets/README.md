@@ -36,77 +36,80 @@ python3 save-data.py
 ## Structure
 
 ```
- datasets
-├──  VideoConference
-│  ├──  hcvm
-│  │  ├──  000
-│  │  │  ├──  laptop_a0117_indoor_00000_000_001.jpg
+datasets
+├── VideoConference
+│  ├── hcvm
+│  │  ├── 000
+│  │  │  ├── laptop_a0117_indoor_00000_000_001.jpg
 │  │  │  ...
 │  │  ...
 │  │
-│  ├──  VideoConference-real
-│  │  ├──  images
-│  │  │  ├──  1uedfp2lF7w@00:00:35
-│  │  │  │  ├──  000
-│  │  │  │  │  ├──  1uedfp2lF7w@00:00:35_000_alignment.fsa
-│  │  │  │  │  ├──  1uedfp2lF7w@00:00:35_00000_000.jpg
+│  ├── VideoConference-real
+│  │  ├── images
+│  │  │  ├── 1uedfp2lF7w@00:00:35
+│  │  │  │  ├── 000
+│  │  │  │  │  ├── 1uedfp2lF7w@00:00:35_000_alignment.fsa
+│  │  │  │  │  ├── 1uedfp2lF7w@00:00:35_00000_000.jpg
 │  │  │  │  │  ...
-│  │  │  │  │  └──  1uedfp2lF7w@00:00:35_00112_000.jpg
-│  │  │  │  ├──  000_faces
-│  │  │  │  │  ├──  1uedfp2lF7w@00:00:35_00001_000_0.png
+│  │  │  │  │  └── 1uedfp2lF7w@00:00:35_00112_000.jpg
+│  │  │  │  ├── 000_faces
+│  │  │  │  │  ├── 1uedfp2lF7w@00:00:35_00001_000_0.png
 │  │  │  │  │  ...
 │  │  │  │  ...
-│  │  │  │  └──  good
+│  │  │  │  └── good
 │  │  │  ...
-│  │  │  └──  xGq_ZHJ92fQ@00:33:10
-│  │  │     ├──  000
-│  │  │     │  ├──  xGq_ZHJ92fQ@00:33:10_000_alignment.fsa
-│  │  │     │  ├──  xGq_ZHJ92fQ@00:33:10_00000_000.jpg
+│  │  │  └── xGq_ZHJ92fQ@00:33:10
+│  │  │     ├── 000
+│  │  │     │  ├── xGq_ZHJ92fQ@00:33:10_000_alignment.fsa
+│  │  │     │  ├── xGq_ZHJ92fQ@00:33:10_00000_000.jpg
 │  │  │     │  ...
-│  │  │     │  └──  xGq_ZHJ92fQ@00:33:10_00245_000.jpg
-│  │  │     ├──  000_faces
-│  │  │     │  ├──  xGq_ZHJ92fQ@00:33:10_00000_000_0.png
+│  │  │     │  └── xGq_ZHJ92fQ@00:33:10_00245_000.jpg
+│  │  │     ├── 000_faces
+│  │  │     │  ├── xGq_ZHJ92fQ@00:33:10_00000_000_0.png
 │  │  │     │  ...
 │  │  │     ...
-│  │  │     └──  good
-│  │  └──  videos
-│  │     ├──  1uedfp2lF7w@00:00:35.mp4
+│  │  │     └── good
+│  │  └── videos
+│  │     ├── 1uedfp2lF7w@00:00:35.mp4
 │  │     ...
-│  └──  VideoConference-synthesis
-│     ├──  images
-│     │  ├──  deepfakes_faceswap
-│     │  │  ├──  1uedfp2lF7w@00:00:35_000⟶WhesSCRO-1M@00:15:15_002
-│     │  │  │  ├──  1uedfp2lF7w@00:00:35_00000_000.jpg
+│  └── VideoConference-synthesis
+│     ├── images
+│     │  ├── deepfakes_faceswap
+│     │  │  ├── 1uedfp2lF7w@00:00:35_000⟶WhesSCRO-1M@00:15:15_002
+│     │  │  │  ├── 1uedfp2lF7w@00:00:35_00000_000.jpg
 │     │  │  │  ...
 │     │  │  ...
-│     │  └──  faceshifter
-│     │     ├──  1uedfp2lF7w@00:00:35_000⟶n2Ipy5bhGQQ@00:08:12_002
-│     │     │  ├──  1uedfp2lF7w@00:00:35_00042_000.jpg
+│     │  └── faceshifter
+│     │     ├── 1uedfp2lF7w@00:00:35_000⟶n2Ipy5bhGQQ@00:08:12_002
+│     │     │  ├── 1uedfp2lF7w@00:00:35_00042_000.jpg
 │     │     │  ...
 │     │     ...
 │     │
-│     └──  videos
-│        ├──  deepfakes_faceswap
-│        │  ├──  pt-wO73Y8to@00:09:15
-│        │  │  ├──  pt-wO73Y8to@00:09:15-deepfakes_faceswap-0000.mp4
+│     └── videos
+│        ├── deepfakes_faceswap
+│        │  ├── pt-wO73Y8to@00:09:15
+│        │  │  ├── pt-wO73Y8to@00:09:15-deepfakes_faceswap-0000.mp4
 │        │  │  ...
 │        │  ...
-│        └──  faceshifter
-│           ├──  1uedfp2lF7w@00:00:35
-│           │  ├──  1uedfp2lF7w@00:00:35_000⟶n2Ipy5bhGQQ@00:08:12_002-faceshifter.mp4
+│        └── faceshifter
+│           ├── 1uedfp2lF7w@00:00:35
+│           │  ├── 1uedfp2lF7w@00:00:35_000⟶n2Ipy5bhGQQ@00:08:12_002-faceshifter.mp4
 │           │  ...
 │           ...
-├──  VideoConference_extended
-│  └──  VideoConference_extended-real
-│     ├──  images
-│     │  ├──  1uedfp2lF7w@00:00:35_extended
-│     │  │  ├──  000
-│     │  │  │  ├──  1uedfp2lF7w@00:00:35_extended_00000_000.jpg
+├── VideoConference_extended
+│  └── VideoConference_extended-real
+│     ├── images
+│     │  ├── 1uedfp2lF7w@00:00:35_extended
+│     │  │  ├── 000
+│     │  │  │  ├── 1uedfp2lF7w@00:00:35_extended_00000_000.jpg
 │     │  │  │  ...
 │     │  │  ...
 │     │  ...
-│     └──  videos
-│        ├──  1uedfp2lF7w@00:00:35_extended.mp4
+│     └── videos
+│        ├── 1uedfp2lF7w@00:00:35_extended.mp4
 │        ...
-└──  Deepfake.db
+└── Deepfake.db
 ```
+For a more detailed version see [structure.md](./structure.md). 
+
+For a more detailed version with icons for the folders, images, etc see [structure_with_icons.md](./structure_with_icons.md) (requires FontAwesome)
