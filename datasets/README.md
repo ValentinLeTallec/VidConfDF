@@ -14,7 +14,7 @@ As a general rule if the folder containing the identities folders has a `good` f
 * [update_with_manual_clustering.py](./update_with_manual_clustering.py) : If one had to correct the automatic clustering, then they can use this script to update the database.
 * [deepfake.sql](./deepfake.sql) : The SQL structure of the database. 
 
-## Dependancies installation
+## Dependencies installation
 
 ```
 pip install -r requierement.txt
