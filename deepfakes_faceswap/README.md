@@ -3,9 +3,6 @@
 We use the [faceswap implementation from the deepfakes github](https://github.com/deepfakes/faceswap) for our generated DeepFakes videos. We made some changes to their implementation to make it fully automatic for our extracted videos. If you are interested in their current status, please head to the corresponding github.
 We provide the source code that was used for our experiments as well as the scripts to produce new videos as well as to recreate our manipulated videos using our provided models.
 
-## Example video
-![example video](../../images/deepfakes.gif)
-
 ## Setup
 
 ### Instructions
@@ -56,8 +53,3 @@ python deepfakes.py
     --python_path <path to python file, e.g., /home/<user>/anaconda3/bin/python>
     (--filelist <path to filelist json that defines the pairs from the input folder (check out our filelist splits as an example)
 ```
-   
- ## Masks
- In comparison to FaceSwap or Face2Face, it is not straightforward what to select as the DeepFakes manipulated area, i.e., mask, as this depends on the post-processing. Our current setup uses Poisson image editing to merge the manipulated area with the rest of the image. The DeepFakes masks in our dataset thus contain all areas where we apply the poisson image editing.
- 
- ![original image](../../images/ex_original.png) ![deepfakes](../../images/ex_deepfakes.png) ![deepfakes](../../images/ex_deepfakes_mask.png)
