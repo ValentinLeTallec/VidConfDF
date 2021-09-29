@@ -4,6 +4,13 @@
 
 ![Overview of the created fakes](./fakefaces.gif)
 
+## Pristine videos licenses
+
+The pristine videos originate from two sources :
+
+- Youtube, under CC BY 4.0 license.
+- [The Human-centric Video Matting Challenge](https://maadaa.ai/cvpr2021-human-centric-video-matting-challenge/), under CC BY-NC 4.0 license.
+
 ## READMEs
 * [Datasets](./datasets/README.md)
 * [Face detection and clustering](./face_detect_cluster/README.md)
