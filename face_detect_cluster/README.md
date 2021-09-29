@@ -1,11 +1,11 @@
 # Detect an cluster faces
 
-For detection, we use retinaface from insgightface (https://github.com/deepinsight/insightface/tree/0cc88e2a2449973e77dbdd417c9ec97ef03940b9/detection/RetinaFace).
+For detection, we use RetinaFace from InsightFace (https://github.com/deepinsight/insightface/tree/0cc88e2a2449973e77dbdd417c9ec97ef03940b9/detection/RetinaFace).
 
 For clustering, we use the python package `face_recognition`, mean-shift and sometime, when everything fails, the good old `do it by hand`.
 
 ## Set up
-1. If you did not merge the the VidConfDF directory with the one containing all large files (cf. [VidConfDF README](../README.md)) you can also download a pre-trained retinaface [here](https://github.com/deepinsight/insightface/tree/master/detection/retinaface#retinaface-pretrained-models) 
+1. If you did not merge the the VidConfDF directory with the one containing all large files (cf. [VidConfDF README](../README.md)) you can also download a pre-trained RetinaFace [here](https://github.com/deepinsight/insightface/tree/master/detection/retinaface#retinaface-pretrained-models) 
 
 
 ## Build the Dockerfile :

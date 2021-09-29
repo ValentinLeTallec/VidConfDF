@@ -3,13 +3,13 @@
 ## Folders
 
 * [Dataset VidConfDF](./datasets/VideoConference/README.md) : The actual dataset.
-* [Datasets VidConfDF extended](./datasets/VideoConference_extended/README.md) : A version the dataset where the excerpts are longer. It is meant to be used to trained models that requiere a lot of data such as [deepfakes/faceswap](https://github.com/deepfakes/faceswap). Be aware that not all faces are well clustered in the extended dataset.
+* [Datasets VidConfDF extended](./datasets/VideoConference_extended/README.md) : A version the dataset where the excerpts are longer. It is meant to be used to trained models that require a lot of data such as [deepfakes/faceswap](https://github.com/deepfakes/faceswap). Be aware that not all faces are well clustered in the extended dataset.
 
 As a general rule if the folder containing the identities folders has a `good` file the clustering is right, if it contains a `bad` file the clustering is wrong or incomplete and if it contains neither then the clustering was not inspected and could be either.
 
 ## Files
 
-* [cluster_faces.py](./cluster_faces.py) : When the default face clustering method (used while extracting the faces) does not give out satifiying results, one can use this script to try other methods.
+* [cluster_faces.py](./cluster_faces.py) : When the default face clustering method (used while extracting the faces) does not give out satisfying results, one can use this script to try other methods.
 * [face_reinsertion.py](./face_reinsertion.py) : Script used to reinsert fakes faces in their original video to create a fake video.
 * [update_with_manual_clustering.py](./update_with_manual_clustering.py) : If one had to correct the automatic clustering, then they can use this script to update the database.
 * [deepfake.sql](./deepfake.sql) : The SQL structure of the database. 
@@ -17,7 +17,7 @@ As a general rule if the folder containing the identities folders has a `good` f
 ## Dependencies installation
 
 ```
-pip install -r requierement.txt
+pip install -r requirement.txt
 ```
 
 ## Instruction to start from scratch
