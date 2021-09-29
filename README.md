@@ -2,6 +2,8 @@
 
 ## Overview
 
+Information about all video exerpt can be found [here](https://vlt1242.notion.site/b9c3e7d65dd84ba5a8cf20156e143d20?v=b95a000e05b147e6bccedbe6c85cd55f)
+
 ![Overview of the created fakes](./fakefaces.gif)
 
 ## Pristine videos licenses
